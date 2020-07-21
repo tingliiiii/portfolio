@@ -105,6 +105,44 @@
             color: #B7635E;
         }
 
+        .photo {
+            width: 200px;
+            height: 133.33px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h4 {
+            font-family: Noto Sans TC;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 22px;
+            text-align: justify;
+            color: #656565;
+            margin-top: 5px;
+        }
+
+        a:link {
+            /*設定還沒有瀏覽過的連結*/
+            text-decoration: none;
+        }
+
+        a:visited {
+            /* 設定已經瀏覽過的連結 */
+            color: #FFFFFF;
+        }
+
+        a:hover {
+            /*設定滑鼠移經的連結*/
+            text-decoration: underline;
+        }
+
+        a:active {
+            /*設定正在點選的連結*/
+            text-decoration: underline;
+        }
+
 
         /* viewport width >1024px */
         @media(min-width: 1024px) {
@@ -140,6 +178,12 @@
                 font-size: 20px;
                 line-height: 29px;
             }
+
+            h4 {
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: 0.5px;
+            }
         }
     </style>
 </head>
@@ -150,7 +194,8 @@
 
         <!-- header -->
         <div>
-            <img src="./images/logo.png" class="header"></a>
+            <a href="https://tingliiiii.github.io/portfolio/index.html">
+                <img src="./images/logo.png" class="header"></a>
         </div>
 
         <!-- first -->
@@ -164,14 +209,38 @@
         </div>
 
         <!-- topic -->
-        <div style="display: flex; 
-        justify-content: center; 
-        margin-top: 30px;">
-            <div class="line"></div>
-            <h3>專題報導</h3>
-            <div class="line"></div>
-        </div>
+        <div>
+            <div style="display: flex;justify-content: center;margin-top: 30px; margin-bottom: 30px;">
+                <div class="line"></div>
+                <h3>專題報導</h3>
+                <div class="line"></div>
+            </div>
 
+            <div style="width: 200px;" class="center">
+                <a
+                    href="https://unews.nccu.edu.tw/unews/%E5%A2%9C%E8%90%BD%E7%9A%84%E7%84%A1%E5%90%8D%E8%8B%B1%E9%9B%84%EF%BC%9A%E7%A4%BE%E5%B7%A5%E7%9A%84%E3%80%8C%E8%AD%89%E3%80%8D%E7%A2%BA%E8%A7%A3%E7%AD%94%EF%BC%9F/"
+                    target="_blank">
+                    <div class="photo" style="background-image: url(./images/t1.jpg);"></div>
+                    <h4>墜落的無名英雄：社工的「證」確解答？</h4>
+                </a>
+            </div>
+
+            <div style="width: 200px;" class="center">
+                <a href="http://ghost.cs.nccu.edu.tw/~ge10839/%A4j%BE%C7%B3%F8%B4%FA%B8%D5/"
+                target="_blank">
+                    <div class="photo" style="background-image: url(./images/t2.jpg);"></div>
+                    <h4>手遊背後的荊棘路：一場獨立團隊打不贏的仗</h4>
+                </a>
+            </div>
+
+            <div style="width: 200px;" class="center">
+                <a href="https://news.cts.com.tw/unews/campus/202006/202006112003629.html"
+                target="_blank">
+                    <div class="photo" style="background-image: url(./images/t3.jpg);"></div>
+                    <h4>戳破健保公平正義的幻象：被遺落的心理治療</h4>
+                </a>
+            </div>
+        </div>
     </div>
 
     <!-- 電腦版 -->
@@ -179,7 +248,8 @@
 
         <!-- header -->
         <div>
-            <img src="./images/logo.png" class="header"></a>
+            <a href="https://tingliiiii.github.io/portfolio/index.html">
+                <img src="./images/logo.png" class="header"></a>
         </div>
 
         <!-- first -->
@@ -195,11 +265,41 @@
         </div>
 
         <!-- topic -->
-        <div style="display: flex; justify-content: center; margin-top: 30px;">
-            <div class="line"></div>
-            <h3>專題報導</h3>
-            <div class="line"></div>
+        <div>
+            <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="line"></div>
+                <h3>專題報導</h3>
+                <div class="line"></div>
+            </div>
+            <div style="width: 700px;display: flex; justify-content: space-between; margin: 30px auto 30px auto;">
+                <div style="width: 200px;" class="center">
+                    <a
+                        href="https://unews.nccu.edu.tw/unews/%E5%A2%9C%E8%90%BD%E7%9A%84%E7%84%A1%E5%90%8D%E8%8B%B1%E9%9B%84%EF%BC%9A%E7%A4%BE%E5%B7%A5%E7%9A%84%E3%80%8C%E8%AD%89%E3%80%8D%E7%A2%BA%E8%A7%A3%E7%AD%94%EF%BC%9F/"
+                        target="_blank">
+                        <div class="photo" style="background-image: url(./images/t1.jpg);"></div>
+                        <h4>墜落的無名英雄：社工的「證」確解答？</h4>
+                    </a>
+                </div>
+
+                <div style="width: 200px;" class="center">
+                    <a href="http://ghost.cs.nccu.edu.tw/~ge10839/%A4j%BE%C7%B3%F8%B4%FA%B8%D5/"
+                    target="_blank">
+                        <div class="photo" style="background-image: url(./images/t2.jpg);"></div>
+                        <h4>手遊背後的荊棘路：一場獨立團隊打不贏的仗</h4>
+                    </a>
+                </div>
+
+                <div style="width: 200px;" class="center">
+                    <a href="https://news.cts.com.tw/unews/campus/202006/202006112003629.html"
+                    target="_blank">
+                        <div class="photo" style="background-image: url(./images/t3.jpg);"></div>
+                        <h4>戳破健保公平正義的幻象：被遺落的心理治療</h4>
+                    </a>
+                </div>
+            </div>
         </div>
+
+    </div>
 
     </div>
 
