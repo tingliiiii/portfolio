@@ -1,0 +1,208 @@
+<html>
+<title>TingLi's portfolio</title>
+<link rel=icon href="./images/logo.png" type="image/png">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        @media all and (min-width: 1024px) {
+            .mobile-only {
+                /* don't display at desktop */
+                display: none;
+            }
+        }
+
+        @media all and (max-width: 1024px) {
+            .desktop-only {
+                /* don't display at mobile */
+                display: none;
+            }
+        }
+
+        body {
+            background-color: #f1f1f1;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        .iphone {
+            width: 100%;
+        }
+
+        .w-1024 {
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .header {
+            display: block;
+            height: 100px;
+            margin: 10px auto 10px auto;
+        }
+
+        .first-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 999em;
+            background-image: url("./images/first.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 20px auto 10px auto;
+        }
+
+        h1 {
+            font-family: Noto Sans TC;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 20px;
+            line-height: 29px;
+            /* identical to box height */
+            letter-spacing: 0.2em;
+            color: #656565;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: Noto Sans TC;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 20px;
+            /* or 167% */
+            text-align: center;
+            color: #656565;
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .line {
+            width: 150px;
+            height: 0px;
+            border: 2px solid #E5B9B6;
+            display: flex;
+            margin: auto 30px auto 30px;
+        }
+
+        h3 {
+            font-family: Noto Sans TC;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 22px;
+            /* identical to box height */
+            display: flex;
+            color: #B7635E;
+        }
+
+
+        /* viewport width >1024px */
+        @media(min-width: 1024px) {
+            .header {
+                height: 150px;
+                margin: 20px auto 20px auto;
+            }
+
+            .first-pic {
+                width: 150px;
+                height: 150px;
+                margin: 20px 0px 30px 40px;
+            }
+
+            h1 {
+                font-size: 25px;
+                line-height: 36px;
+                text-align: left;
+            }
+
+            h2 {
+                font-size: 18px;
+                line-height: 35px;
+                text-align: left;
+            }
+
+            .line {
+                width: 270px;
+                margin: auto 40px auto 40px;
+            }
+
+            h3 {
+                font-size: 20px;
+                line-height: 29px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 手機版 -->
+    <div class="mobile-only iphone">
+
+        <!-- header -->
+        <div>
+            <img src="./images/logo.png" class="header"></a>
+        </div>
+
+        <!-- first -->
+        <div style="width: 375px; height: auto;" class="center">
+            <div class="first-pic">
+            </div>
+            <h1>劉庭莉</h1>
+            <h2>採訪／撰寫／編輯／攝影</br>
+                國立政治大學新聞學系三年級</br>
+                對世界充滿好奇心、對採訪報導充滿熱忱</h2>
+        </div>
+
+        <!-- topic -->
+        <div style="display: flex; 
+        justify-content: center; 
+        margin-top: 30px;">
+            <div class="line"></div>
+            <h3>專題報導</h3>
+            <div class="line"></div>
+        </div>
+
+    </div>
+
+    <!-- 電腦版 -->
+    <div class="desktop-only w-1024">
+
+        <!-- header -->
+        <div>
+            <img src="./images/logo.png" class="header"></a>
+        </div>
+
+        <!-- first -->
+        <div style="width: 700px; height: 200px; display: flex; justify-content: space-around;" class="center">
+            <div class="first-pic">
+            </div>
+            <div>
+                <h1>劉庭莉</h1>
+                <h2>採訪／撰寫／編輯／攝影</br>
+                    國立政治大學新聞學系三年級</br>
+                    對世界充滿好奇心、對採訪報導充滿熱忱</h2>
+            </div>
+        </div>
+
+        <!-- topic -->
+        <div style="display: flex; justify-content: center; margin-top: 30px;">
+            <div class="line"></div>
+            <h3>專題報導</h3>
+            <div class="line"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
