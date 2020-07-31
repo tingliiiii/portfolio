@@ -130,17 +130,18 @@
 
         a:visited {
             /* 設定已經瀏覽過的連結 */
-            color: #FFFFFF;
+            text-decoration: none;
         }
 
         a:hover {
             /*設定滑鼠移經的連結*/
-            text-decoration: underline;
+            text-decoration: none;
+            transition: 0.5s;
         }
 
         a:active {
             /*設定正在點選的連結*/
-            text-decoration: underline;
+            text-decoration: none;
         }
 
         h5 {
@@ -214,6 +215,29 @@
             bottom: -60px;
         }
 
+        ul {
+            list-style: none;
+            font-family: Noto Sans TC;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        ul li::before {
+            content: "・　";
+            color: #C96F69;
+        }
+
+        li{
+            padding: 5px;
+        }
+
+        .sec{
+            color: #E5B9B6;
+        }
+
+        .sec:hover{
+            color: #C96F69;
+        }
 
 
         /* viewport width >1024px */
@@ -535,6 +559,20 @@
                 <img src="./images/logo.png" class="header"></a>
         </div>
 
+        <!-- nav -->
+        <div style="width: 180px;height: 200px; position: fixed;right: 10px;">
+            <nav>
+                <ul>
+                    <li><a class="sec" href="#sec-1">專題報導</a></li>
+                    <li><a class="sec" href="#sec-2">校園報導</a></li>
+                    <li><a class="sec" href="#sec-3">體育報導</a></li>
+                    <li><a class="sec" href="#sec-4">影音報導</a></li>
+                    <li><a class="sec" href="#sec-5">其他類型</a></li>
+                    <li><a class="sec" href="#sec-6">關於劉庭莉</a></li>
+                </ul>
+            </nav>
+        </div>
+
         <!-- first -->
         <div style="width: 700px; height: 200px; display: flex; justify-content: space-evenly;" class="center">
             <div class="first-pic">
@@ -551,7 +589,7 @@
         <div>
             <div style="display: flex; justify-content: center; margin-top: 30px;">
                 <div class="line"></div>
-                <h3>專題報導</h3>
+                <h3 id="sec-1">專題報導</h3>
                 <div class="line"></div>
             </div>
 
@@ -584,7 +622,7 @@
         <div>
             <div style="display: flex;justify-content: center;margin-top: 30px; margin-bottom: 30px;">
                 <div class="line"></div>
-                <h3>校園報導</h3>
+                <h3 id="sec-2">校園報導</h3>
                 <div class="line"></div>
             </div>
 
@@ -642,7 +680,7 @@
         <div>
             <div style="display: flex;justify-content: center;margin-top: 30px; margin-bottom: 30px;">
                 <div class="line"></div>
-                <h3>體育報導</h3>
+                <h3 id="sec-3">體育報導</h3>
                 <div class="line"></div>
             </div>
             <div style="width: 70% ;display: flex; justify-content: space-between; margin: 30px auto 30px auto;">
@@ -675,7 +713,7 @@
         <div>
             <div style="display: flex;justify-content: center;margin-top: 30px; margin-bottom: 30px;">
                 <div class="line"></div>
-                <h3>影音報導</h3>
+                <h3 id="sec-4">影音報導</h3>
                 <div class="line"></div>
             </div>
 
@@ -702,7 +740,7 @@
         <div>
             <div style="display: flex;justify-content: center;margin-top: 30px; margin-bottom: 30px;">
                 <div class="line"></div>
-                <h3>其他類型</h3>
+                <h3 id="sec-5">其他類型</h3>
                 <div class="line"></div>
             </div>
             <div style="width: 70% ;display: flex; justify-content: space-between; 
@@ -752,7 +790,7 @@
         <div>
             <div style="display: flex;justify-content: center;margin-top: 30px; margin-bottom: 30px;">
                 <div class="line"></div>
-                <h3>關於・劉庭莉</h3>
+                <h3 id="sec-6">關於・劉庭莉</h3>
                 <div class="line"></div>
             </div>
             <div style="width: 60%; margin: auto;
