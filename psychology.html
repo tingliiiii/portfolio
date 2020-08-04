@@ -1,0 +1,163 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        @media all and (min-width: 1024px) {
+            .mobile-only {
+                /* don't display at desktop */
+                display: none;
+            }
+        }
+
+        @media all and (max-width: 1024px) {
+            .desktop-only {
+                /* don't display at mobile */
+                display: none;
+            }
+        }
+
+        body {
+            background-color: #f1f1f1;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        .iphone {
+            width: 100%;
+        }
+
+        .w-1024 {
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .header {
+            display: block;
+            height: 80px;
+            margin: 5px auto 5px auto;
+        }
+
+        ul {
+            list-style: none;
+            font-family: Noto Sans TC;
+            font-style: normal;
+            font-weight: 500;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .sec {
+            color: #8899A3;
+            font-size: 16px;
+        }
+
+        .sec:hover {
+            color: #4C616B;
+        }
+
+        ul li::before {
+            content: "・　";
+            color: #8899A3;
+        }
+
+        li {
+            padding: 5px;
+            margin: auto;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        .pdf{
+            width:80%; 
+            height: 90%; 
+            margin-right: auto; 
+            margin-left: auto; 
+            display: block;
+        }
+
+
+        /* viewport width >1024px */
+        @media(min-width: 1024px) {
+            .header {
+                position: absolute;
+                left: 1%;
+                top: 40%;
+                width: 15%;
+                height: auto;
+            }
+
+            .pdf{
+                width:65%;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 手機版 -->
+    <div class="mobile-only iphone">
+
+        <!-- header -->
+        <div>
+            <a href="https://tingliiiii.github.io/portfolio/index.html">
+                <img src="./images/logo_s.png" class="header"></a>
+        </div>
+
+        <!-- pdf -->
+        <iframe src="./pdf/戳破健保公平正義的幻象：被遺落的心理治療.pdf"
+            class="pdf" frameborder="0"
+            scrolling="no">
+        </iframe>
+
+    </div>
+
+    <!-- 電腦版 -->
+    <div class="desktop-only w-1024">
+
+        <!-- header -->
+        <div>
+            <a href="https://tingliiiii.github.io/portfolio/index.html">
+                <img src="./images/logo_s.png" class="header"></a>
+        </div>
+
+        <!-- nav -->
+        <div style="position: absolute; right: 1%; top: 35%;
+        width: 180px;">
+
+            <nav>
+                <ul>
+                    <li><a class="sec" href="https://tingliiiii.github.io/portfolio/index.html#sec-1">專題報導</a></li>
+                    <li><a class="sec" href="https://tingliiiii.github.io/portfolio/index.html#sec-2">校園報導</a></li>
+                    <li><a class="sec" href="https://tingliiiii.github.io/portfolio/index.html#sec-3">體育報導</a></li>
+                    <li><a class="sec" href="https://tingliiiii.github.io/portfolio/index.html#sec-4">影音報導</a></li>
+                    <li><a class="sec" href="https://tingliiiii.github.io/portfolio/index.html#sec-5">其他類型</a></li>
+                    <li><a class="sec" href="https://tingliiiii.github.io/portfolio/index.html#sec-6">關於劉庭莉</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!-- pdf -->
+        <iframe src="./pdf/戳破健保公平正義的幻象：被遺落的心理治療.pdf"
+            class="pdf" frameborder="0"
+            scrolling="no">
+        </iframe>
+
+
+
+    </div>
+</body>
+
+</html>
